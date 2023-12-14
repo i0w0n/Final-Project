@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Q0" class="container">
+        <div class="choices">
+            <div id="A0" class="center choices-child">
+            <input type="radio" id="choice0a" name="choice0" value="sound" class="radio-yellow">
+            <label for="choice0a">
+                <h2>Sound</h2>
+            </label>
+        </div>
+
+        <div id="B0" class="center choices-child">
+            <input type="radio" id="choice0b" name="choice0" value="scent" class="radio-yellow">
+            <label for="choice0b">
+                <h2>Scent</h2>
+            </label>
+        </div>
+        </div>
+        
+        
+        <h1>Sound or Scent?</h1>
+
+        <div class="button-container">
+            <a href="#Q1" class="button-center">
+                <button  id="button-choice0"> Next</button>
+            </a>
+        </div>
+        
+    </div>
+
+    <div id="Q1" class="container">
+
+        <div>
+            <h1>How would you descibe this memory using one word? </h1>
+        </div>
+
+        <div class="form__group">
+            <input id="name" type="text" class="form__input" placeholder="Type here!">
+        </div>
+        
+        <div class="button-container">
+            <a href="#Q2">
+                <button class="button-center" id="button-name"> Next</button>
+            </a> 
+        </div>
+        
+    </div>
+    
+    <div id="Q2" class="container">
+        <h1>How often do you think about it?</h1>
+
+        <div class="choices">
+            <div id="A1">
+                <input type="radio" id="choice1a" name="choice1" value="255" class="radio-pink">
+                <label for="choice1a">
+                    <h2>Very often</h2>
+                    <p>remembers every detail</p>
+                </label>
+            </div>
+
+            <div id="B1">
+                <input type="radio" id="choice1b" name="choice1" value="210" class="radio-pink">
+                <label for="choice1b">
+                    <h2>sometimes</h2>
+                    <p>talks about it in conversations</p>
+                </label>
+            </div>
+
+            <div id="C1">
+                <input type="radio" id="choice1c" name="choice1" value="150" class="radio-pink">
+                <label for="choice1c">
+                    <h2>not very often</h2>
+                    <p>remembers when other people mentions</p>
+                </label>
+            </div>
+
+            <div id="D1">
+                <input type="radio" id="choice1d" name="choice1" value="100" class="radio-pink">
+                <label for="choice1d">
+                    <h2>hardly ever</h2>
+                    <p>dusty memory, vaguely remembers</p>
+                </label>
+            </div>
+        </div>
+
+            <div class="button-container">
+                <a href="#Q3">
+                    <button class="button-center" id="button-choice1"> Next</button>
+                </a>
+            </div>
+        
+    </div>
+
+    <div id="Q3" class="container">
+        <div>
+            <h1>When was it?</h1>
+        </div> 
+        
+        <div class="choices">
+            <div id="A2">
+                <input type="radio" id="choice2a" name="choice2" value="100">
+                <label for="choice2a">
+                    <h2>Just happened this week</h2>
+                </label>
+            </div>
+
+            <div id="B2">
+                <input type="radio" id="choice2b" name="choice2" value="70">
+                <label for="choice2b">
+                    <h2>This year</h2>
+                </label>
+            </div>
+
+            <div id="C2">
+                <input type="radio" id="choice2c" name="choice2" value="50">
+                <label for="choice2c">
+                    <h2>Past 3 years</h2>
+                </label>
+            </div>
+
+            <div id="D2">
+                <input type="radio" id="choice2d" name="choice2" value="20">
+                <label for="choice2c">
+                    <h2>a long time ago</h2>
+                </label>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="#Q4">
+                <button class="button-center" id="button-choice2"> Next</button>
+            </a>
+        </div>
+        
+    </div>
+
+    <div id="Q4" class="container"> 
+        <div>
+           <h1>How did you feel?</h1> 
+        </div>
+        
+        <div class="choices">
+            <div id="A3">
+                <input type="radio" id="choice3a" name="choice3" value="255">
+                <label for="choice3a">
+                    <h2>Comfortable</h2>
+                </label>
+            </div>
+
+            <div id="B3">
+                <input type="radio" id="choice3b" name="choice3" value="200">
+                <label for="choice3b">
+                    <h2>Excited</h2>
+                </label>
+            </div>
+
+            <div id="C3">
+                <input type="radio" id="choice3c" name="choice3" value="150">
+                <label for="choice3c">
+                    <h2>Anxious</h2>
+                </label>
+            </div>
+
+            <div id="D3">
+                <input type="radio" id="choice3d" name="choice3" value="100">
+                <label for="choice3c">
+                    <h2>Disappointed</h2>
+                </label>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <a href="#Q0">
+                <button class="button-center" id="button-submit"> Submit</button>
+            </a>            
+        </div>
+
+    </div>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="input.js"></script>
+</body>
+</html> 
